@@ -38,7 +38,7 @@ orderBtn.addEventListener('click', (e) => {
     
     let data = {
         name: name,
-        email: date,
+        email: email,
         phone: phone,
         text: text
     }
