@@ -11,9 +11,10 @@ dp = Dispatcher(bot)
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
     keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    keyboard.add(types.KeyboardButton('Каталог', url='https://imsolution.ru/product'))
-    keyboard.add(types.KeyboardButton('Отправить заявку', web_app=WebAppInfo(url='https://keplerxiii.github.io/IMS_form_tg/'), request_contact=True))
-    
+    keyboard_inline = types.InlineKeyboardMarkup()
+    keyboard_inline.add(types.KeyboardButton('Сайт компании', url='https://imsolution.ru/product'))
+    keyboard.add(types.KeyboardButton('Отправить заявку', web_app=WebAppInfo(url='https://keplerxiii.github.io/IMS_form_tg/')))
+    keyboard_inline.add()
     keyboard.add()
     await message.answer('Добрый день! Рады вас видеть, можете ознакомиться с каталогом товаров и оставить заявку', reply_markup=keyboard)
 
