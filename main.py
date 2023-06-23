@@ -1,7 +1,7 @@
 from aiogram import Bot, Dispatcher, executor, types
 from aiogram.types.web_app_info import WebAppInfo
 from dotenv import load_dotenv
-import os
+import os, json
 
 load_dotenv()
 
