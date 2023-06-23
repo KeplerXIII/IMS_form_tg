@@ -8,6 +8,8 @@ tg.expand();
 //     // document.getElementById('user_name').value = tg.initDataUnsafe.user.first_name + ' ' + tg.initDataUnsafe.user.last_name
 // })
 
+document.getElementById('user_name').value = tg.initDataUnsafe.user.first_name
+
 orderBtn.addEventListener('click', (e) => {
     e.preventDefault()
     document.getElementById('error').innerText = ''
