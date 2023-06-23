@@ -40,8 +40,7 @@ orderBtn.addEventListener('click', (e) => {
         name: name,
         email: date,
         phone: phone,
-        text: text,
-        extra_data: tg.initDataUnsafe.user.first_name
+        text: text
     }
 
     tg.sendData(JSON.stringify(data))
