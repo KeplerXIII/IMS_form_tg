@@ -32,7 +32,7 @@ orderBtn.addEventListener('click', (e) => {
     }
 
     if(text.length < 5) {
-        document.getElementById('error').innerText = 'Поле заявка не должно быть пустым'
+        document.getElementById('error').innerText = 'Заполните заявку'
         return
     }
     
