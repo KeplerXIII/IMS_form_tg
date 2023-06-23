@@ -20,6 +20,6 @@ async def start(message: types.Message):
 async def web_app(mesage: types.Message):
     res = json.loads(mesage.web_app_data.data)
     print(res)
-    await mesage.answer(res['name'] + res['date'])
+    await mesage.answer(res)
 
 executor.start_polling(dp)
